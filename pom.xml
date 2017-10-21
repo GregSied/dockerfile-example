@@ -12,6 +12,14 @@
     <plugins>
       <plugin>
         <artifactId>maven-assembly-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <phase>compile</phase>
+          </execution>
+        </executions>
         <configuration>
           <archive>
             <manifest>
